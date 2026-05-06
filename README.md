@@ -27,3 +27,18 @@ ros2 launch hello_robot_challenge hello_launch.py
 
 ---
 **Maria Lagab** - *Spécialité Robotique et Système Intelligent*
+
+## 🧠 Fonctionnalités Autonomes
+Ce projet inclut désormais un nœud de conduite autonome basé sur les données du Lidar :
+- **Obstacle Avoidance** : Le robot s'arrête et pivote si un objet est détecté à moins d'un mètre.
+- **Gazebo Integration** : Utilise les plugins `libgazebo_ros_diff_drive.so` pour le mouvement.
+
+## 🚀 Lancement
+1. Lancer la simulation :
+   ```bash
+   ros2 launch miniproject_3_autonomous_drive_robot display.launch.py
+   ```
+2. Lancer l'autonomie :
+   ```bash
+   python3 src/miniproject_3_autonomous_drive_robot/scripts/autonomous_drive.py
+   ```
