@@ -13,5 +13,14 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
     ],
-    entry_points={'console_scripts': ['hello_node = hello_robot_challenge.hello_node:main']},
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='Maria Lagab',
+    description='CHALLENGE SYNTAXE: Hello Robot ROS2',
+    license='Apache-2.0',
+    entry_points={
+        'console_scripts': [
+            'hello_node = hello_robot_challenge.hello_node:main'
+        ],
+    },
 )
